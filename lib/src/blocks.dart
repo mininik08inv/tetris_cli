@@ -195,6 +195,33 @@ var _defBlocks = [
       [0, 0, 0, 0],
       [0, 0, 0, 0]
     ]
+  ],
+  // П
+  [
+    [
+      [0, 0, 1, 1],
+      [1, 1, 1, 0],
+      [1, 0, 1, 1],
+      [0, 0, 0, 0]
+    ],
+    [
+      [0, 1, 1, 0],
+      [0, 0, 1, 0],
+      [0, 1, 1, 1],
+      [0, 1, 0, 1]
+    ],
+    [
+      [1, 1, 0, 0],
+      [0, 1, 1, 1],
+      [1, 1, 0, 1],
+      [0, 0, 0, 0]
+    ],
+    [
+      [1, 0, 1, 0],
+      [1, 1, 1, 0],
+      [0, 1, 0, 0],
+      [0, 1, 1, 0]
+    ]
   ]
 ];
 
@@ -211,8 +238,9 @@ typedef BlockType = int;
 // 4 - N
 // 5 - mirror N
 // 6 - T
+// 7 - П
 
-const List<BlockType> _blockTypes = [0, 1, 2, 3, 4, 5, 6];
+const List<BlockType> _blockTypes = [0, 7, 1, 2, 3, 7, 4, 5, 6, 7];
 BlockType _getRandomBlockType() => _blockTypes[_getRandom(
       0,
       _blockTypes.length - 1,
